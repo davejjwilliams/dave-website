@@ -1,11 +1,15 @@
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className='main'>
-      <h1>David Julien John Williams</h1>
+      <div className='header' />
+      <h1 className='typing-demo'>
+        hi, <span className='highlight'>dave</span> here.
+      </h1>
+      <h2>Recent Software Engineering MSc Graduate</h2>
     </div>
   );
-}
+};
 
 export default App;

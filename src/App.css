@@ -1,5 +1,5 @@
 html, body {
-  background-color: black;
+  background-color: navy;
   padding: 0;
   margin: 0;
 }
@@ -8,6 +8,39 @@ h1 {
   margin: 0;
 }
 
+.header {
+  padding-top: 40%;
+}
+
+.highlight {
+  color: #BE0AFF;
+}
+
 .main {
   color: white;
+  font-family: "Lucida Console", "Courier New", monospace;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.typing-demo {
+  width: 14ch;
+  animation: typing 1.2s steps(14), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 3em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
