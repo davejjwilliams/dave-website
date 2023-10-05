@@ -1,38 +1,7 @@
 const About = () => {
   return (
     <div>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
-      <p>THIS IS THE ABOUT SECTION</p>
+      <h1>About</h1>
     </div>
   );
 };

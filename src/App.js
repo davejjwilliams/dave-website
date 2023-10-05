@@ -1,14 +1,24 @@
 import './App.css';
 import About from './components/About';
+import Education from './components/Education';
+import Intro from './components/Intro';
+import Projects from './components/Projects';
+
 import { useRef } from 'react';
 
 const App = () => {
+  // Section Refs
   const homeRef = useRef();
+  const aboutRef = useRef();
   const educationRef = useRef();
   const projectsRef = useRef();
 
+  // Section Scroll Methods
   function homeScroll() {
     homeRef.current.scrollIntoView({ behavior: 'smooth' });
+  }
+  function aboutScroll() {
+    aboutRef.current.scrollIntoView({ behavior: 'smooth' });
   }
   function educationScroll() {
     educationRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -20,14 +30,22 @@ const App = () => {
   return (
     <div className='main'>
       <div ref={homeRef} className='header' />
-      <h1 className='typing'>
-        hi, <span className='highlight'>david</span> here.
-      </h1>
-      <h2>Software Engineering MSc Recent Graduate</h2>
+      <Intro />
+      <div ref={aboutRef} />
       <About />
+      <div ref={educationRef} />
+      <Education />
+      <div ref={projectsRef} />
+      <Projects />
+
+      {/* Sticky Floating Links */}
       <div class='float'>
         <a href='#home' className='float-links' onClick={homeScroll}>
           /home
+        </a>
+        <br />
+        <a href='#about' className='float-links' onClick={aboutScroll}>
+          /about
         </a>
         <br />
         <a href='#education' className='float-links' onClick={educationScroll}>
