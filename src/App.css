@@ -29,7 +29,7 @@ h1 {
   margin-left: 25%;
 }
 
-.typing-demo {
+.typing {
   width: 15ch;
   animation: typing 1.2s steps(15), blink .5s step-end infinite alternate;
   white-space: nowrap;
@@ -60,5 +60,14 @@ h1 {
 }
 
 .float-links {
-  color: var(--base-text)
+  color: var(--base-text);
+  background: var(--background);
+  background: linear-gradient(to right, var(--base-text) 49.5%, var(--background) 50%);
+  background-size: 200% 100%;
+  background-position:right bottom;
+  transition:all 0.5s ease;
+}
+
+.float-links:hover {
+    background-position:left bottom;
 }
