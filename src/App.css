@@ -39,10 +39,10 @@ html, body {
 
 .typing {
   width: 15ch;
-  animation: typing 1.2s steps(15), blink .5s step-end infinite alternate;
+  animation: typing 1.5s steps(15), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid;
+  border-right: 3px solid var(--highlight-color);
   font-family: monospace;
   font-size: 3em;
 }
@@ -98,5 +98,14 @@ html, body {
 .intro-button:hover {
   background-color: var(--highlight-color);
   border: 5px solid #822ab1;
+}
 
+@media screen and (max-width: 900px) {
+  .main {
+    text-align: justify;
+    font-family: 'Source Code Pro', monospace;
+    width: 80%;
+    margin-top: 30vh;
+    margin-left: 10%;
+  }
 }
