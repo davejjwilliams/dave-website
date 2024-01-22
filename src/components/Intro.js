@@ -5,15 +5,16 @@ const Intro = () => {
         hi, <span className='highlight'>david</span> here.
       </div>
       <div className='subtitle'>
-        Software Systems Engineering MSc Recent Graduate
+        Research Assistant @ UCL
       </div>
       <div>
-        I'm a 23 year-old aspiring software engineer based in London. I'm
-        proficient in{' '}
-        <span className='highlight'>object-oriented paradigms</span> and
-        passionate about all stages of the software development lifecycle, from{' '}
-        <span className='highlight'>requirements engineering</span> to{' '}
-        <span className='highlight'>quality assurance</span>.
+        I'm a 23 year-old aspiring software engineer based in London. I am
+        passionate about software engineering, with a keen interest in not only{' '}
+        <span className='highlight'>back-</span> and{' '}
+        <span className='highlight'>font-end development</span>, but the full
+        lifecycle from <span className='highlight'>requirements gathering</span>{' '}
+        to <span className='highlight'>quality assurance</span>,{' '}
+        <span className='highlight'>CI/CD</span> and everything in between.
       </div>
       <a href='mailto:davejjwilliams@email.com' className='intro-button'>
         Contact
