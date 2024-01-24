@@ -4,9 +4,7 @@ const Intro = () => {
       <div className='title typing'>
         hi, <span className='highlight'>david</span> here.
       </div>
-      <div className='subtitle'>
-        Research Assistant @ UCL
-      </div>
+      <div className='subtitle'>Research Assistant @ UCL</div>
       <div>
         I'm a 23 year-old aspiring software engineer based in London. I am
         passionate about software engineering, with a keen interest in not only{' '}
@@ -16,7 +14,7 @@ const Intro = () => {
         to <span className='highlight'>quality assurance</span>,{' '}
         <span className='highlight'>CI/CD</span> and everything in between.
       </div>
-      <a href='mailto:davejjwilliams@email.com' className='intro-button'>
+      <a href='mailto:davejjwilliams@gmail.com' className='intro-button'>
         Contact
       </a>
       &nbsp;

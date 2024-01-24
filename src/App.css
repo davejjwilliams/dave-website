@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import 'react-alice-carousel/lib/alice-carousel.css';
 
 :root {
   --base-text: #cecece;
   --title-text: #ffffff;
-  --highlight-color: #4AF626;
+  --highlight-color: #4af626;
+  --button-highlight-color: #2d8f19;
   /* --highlight-color: #ba3aff; */
   --background: #222222;
 }
 
-html, body {
+html,
+body {
   background-color: var(--background);
   padding: 0;
   margin: 0;
@@ -22,7 +25,7 @@ html, body {
 
 .subtitle {
   font-size: x-large;
-  color: var(--title-text)
+  color: var(--title-text);
 }
 
 .highlight {
@@ -40,7 +43,7 @@ html, body {
 
 .typing {
   width: 15ch;
-  animation: typing 1.5s steps(15), blink .5s step-end infinite alternate;
+  animation: typing 1.5s steps(15), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid var(--highlight-color);
@@ -50,35 +53,39 @@ html, body {
 
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
 }
-    
+
 @keyframes blink {
   50% {
-    border-color: transparent
+    border-color: transparent;
   }
 }
 
 .float {
-	position:fixed;
-	bottom:40px;
-	right:40px;
-	text-align:left;
-	text-shadow: 2px 2px 3px #000;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  text-align: left;
+  text-shadow: 2px 2px 3px #000;
 }
 
 .float-links {
   color: var(--base-text);
   background: var(--background);
-  background: linear-gradient(to right, var(--base-text) 49.5%, var(--background) 50%);
+  background: linear-gradient(
+    to right,
+    var(--base-text) 49.5%,
+    var(--background) 50%
+  );
   background-size: 200% 100%;
-  background-position:right bottom;
-  transition:all 0.5s ease;
+  background-position: right bottom;
+  transition: all 0.5s ease;
 }
 
 .float-links:hover {
-    background-position:left bottom;
+  background-position: left bottom;
 }
 
 .intro-button {
@@ -98,7 +105,13 @@ html, body {
 
 .intro-button:hover {
   background-color: var(--highlight-color);
-  border: 5px solid #822ab1;
+  border: 5px solid var(--button-highlight-color);
+}
+
+.card {
+  margin: 1em;
+  padding: 1em;
+  background-color: #444444;
 }
 
 @media screen and (max-width: 900px) {
