@@ -114,6 +114,10 @@ body {
   background-color: #444444;
 }
 
+.project-nav-buttons {
+  text-align: center;
+}
+
 @media screen and (max-width: 900px) {
   .main {
     text-align: justify;

@@ -4,19 +4,19 @@ import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import Project from './Project';
 
-const responsiveProps = {
-  0: {
-    items: 1
-  },
-  1024: {
-    items: 2,
-    itemsFit: 'contain'
-  },
-  1600: {
-    items: 3,
-    itemsFit: 'contain'
-  }
-};
+// const responsiveProps = {
+//   0: {
+//     items: 1
+//   },
+//   1024: {
+//     items: 2,
+//     itemsFit: 'contain'
+//   },
+//   1600: {
+//     items: 3,
+//     itemsFit: 'contain'
+//   }
+// };
 
 const projects = [
   { title: 'B-Assist', desc: 'Description' },
@@ -90,11 +90,11 @@ const ProjectCarousel = () => {
       disableButtonsControls
       items={items}
       activeIndex={activeIndex}
-      responsive={responsiveProps}
+      // responsive={responsiveProps}
       onSlideChanged={onSlideChanged}
       onUpdated={onUpdated}
     />,
-    <div className='b-refs-buttons'>
+    <div className='b-refs-buttons project-nav-buttons'>
       <button onClick={slidePrev} className='intro-button'>
         {'<'}
       </button>
