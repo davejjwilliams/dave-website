@@ -16,20 +16,8 @@ const App = () => {
   const publicationsRef = useRef();
 
   // Section Scroll Methods
-  function homeScroll() {
-    homeRef.current.scrollIntoView({ behavior: 'smooth' });
-  }
-  function aboutScroll() {
-    aboutRef.current.scrollIntoView({ behavior: 'smooth' });
-  }
-  function educationScroll() {
-    educationRef.current.scrollIntoView({ behavior: 'smooth' });
-  }
-  function projectsScroll() {
-    projectsRef.current.scrollIntoView({ behavior: 'smooth' });
-  }
-  function publicationsScroll() {
-    publicationsRef.current.scrollIntoView({ behavior: 'smooth' });
+  function sectionScroll(inputRef) {
+    inputRef.current.scrollIntoView({ behavior: 'smooth' });
   }
 
   return (
@@ -47,28 +35,44 @@ const App = () => {
 
       {/* Sticky Floating Links */}
       <div class='float'>
-        <a href='#home' className='float-links' onClick={homeScroll}>
+        <a
+          href='#home'
+          className='float-links'
+          onClick={() => sectionScroll(homeRef)}
+        >
           /home
         </a>
         <br />
-        <a href='#about' className='float-links' onClick={aboutScroll}>
+        <a
+          href='#about'
+          className='float-links'
+          onClick={() => sectionScroll(aboutRef)}
+        >
           /about
         </a>
         <br />
-        <a href='#education' className='float-links' onClick={educationScroll}>
+        <a
+          href='#education'
+          className='float-links'
+          onClick={() => sectionScroll(educationRef)}
+        >
           /education
         </a>
         <br />
-        <a href='#projects' className='float-links' onClick={projectsScroll}>
-          /proj
+        <a
+          href='#projects'
+          className='float-links'
+          onClick={() => sectionScroll(projectsRef)}
+        >
+          /projects
         </a>
         <br />
         <a
           href='#publications'
           className='float-links'
-          onClick={publicationsScroll}
+          onClick={() => sectionScroll(publicationsRef)}
         >
-          /pub
+          /publications
         </a>
       </div>
     </div>
