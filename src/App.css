@@ -112,6 +112,12 @@ body {
   margin: 1em;
   padding: 1em;
   background-color: #444444;
+  border-radius: 1em;
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 0.5em;
 }
 
 .project-nav-buttons {
@@ -120,10 +126,14 @@ body {
 
 @media screen and (max-width: 900px) {
   .main {
-    text-align: justify;
+    text-align: left;
     font-family: 'Source Code Pro', monospace;
     width: 80%;
     margin-top: 30vh;
     margin-left: 10%;
+  }
+
+  .float {
+    display: none;
   }
 }

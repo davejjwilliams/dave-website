@@ -3,6 +3,7 @@ import About from './components/About';
 import Education from './components/Education';
 import Intro from './components/Intro';
 import Projects from './components/Projects';
+import Publications from './components/Publications';
 
 import { useRef } from 'react';
 
@@ -12,6 +13,7 @@ const App = () => {
   const aboutRef = useRef();
   const educationRef = useRef();
   const projectsRef = useRef();
+  const publicationsRef = useRef();
 
   // Section Scroll Methods
   function homeScroll() {
@@ -26,6 +28,9 @@ const App = () => {
   function projectsScroll() {
     projectsRef.current.scrollIntoView({ behavior: 'smooth' });
   }
+  function publicationsScroll() {
+    publicationsRef.current.scrollIntoView({ behavior: 'smooth' });
+  }
 
   return (
     <div className='main'>
@@ -37,6 +42,8 @@ const App = () => {
       <Education />
       <div ref={projectsRef} />
       <Projects />
+      <div ref={publicationsRef} />
+      <Publications />
 
       {/* Sticky Floating Links */}
       <div class='float'>
@@ -53,7 +60,15 @@ const App = () => {
         </a>
         <br />
         <a href='#projects' className='float-links' onClick={projectsScroll}>
-          /projects
+          /proj
+        </a>
+        <br />
+        <a
+          href='#publications'
+          className='float-links'
+          onClick={publicationsScroll}
+        >
+          /pub
         </a>
       </div>
     </div>

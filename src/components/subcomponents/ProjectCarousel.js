@@ -5,9 +5,24 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 import Project from './Project';
 
 const items = [
-  <Project key={1} title={'B-Assist'} desc={'Description'} />,
-  <Project key={2} title={'Digital FGD Platform'} desc={'Description'} />,
-  <Project key={3} title={'Manutrackture'} desc={'Description'} />
+  <Project
+    key={1}
+    title={'B-Assist'}
+    desc={'Description'}
+    image_url={'https://i.imgur.com/1p7a2Vv.jpeg'}
+  />,
+  <Project
+    key={2}
+    title={'Digital FGD Platform'}
+    desc={'Description'}
+    image_url={'https://i.imgur.com/UzEAPym.jpeg'}
+  />,
+  <Project
+    key={3}
+    title={'Manutrackture'}
+    desc={'Description'}
+    image_url={'https://i.imgur.com/GonDqwE.jpeg'}
+  />
 ];
 
 const ProjectCarousel = () => {
