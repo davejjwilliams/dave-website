@@ -10,6 +10,7 @@ const Publications = () => {
         className='highlight'
         href='https://arxiv.org/abs/2311.10516'
         target='_blank'
+        rel='noreferrer'
       >
         arXiv:2311.10516
       </a>{' '}
