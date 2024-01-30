@@ -43,20 +43,22 @@ const ProjectCarousel = () => {
   };
 
   return [
-    <AliceCarousel
-      mouseTracking
-      disableDotsControls
-      disableButtonsControls
-      items={items}
-      activeIndex={activeIndex}
-    />,
-    <div className='b-refs-buttons project-nav-buttons'>
-      <button onClick={slidePrev} className='intro-button'>
-        {'<'}
-      </button>
-      <button onClick={slideNext} className='intro-button'>
-        {'>'}
-      </button>
+    <div className='project-carousel'>
+      <AliceCarousel
+        mouseTracking
+        disableDotsControls
+        disableButtonsControls
+        items={items}
+        activeIndex={activeIndex}
+      />
+      <div className='b-refs-buttons project-nav-buttons'>
+        <button onClick={slidePrev} className='intro-button'>
+          {'<'}
+        </button>
+        <button onClick={slideNext} className='intro-button'>
+          {'>'}
+        </button>
+      </div>
     </div>
   ];
 };

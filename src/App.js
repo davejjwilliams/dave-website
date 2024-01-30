@@ -4,6 +4,7 @@ import Education from './components/Education';
 import Intro from './components/Intro';
 import Projects from './components/Projects';
 import Publications from './components/Publications';
+import Footer from './components/Footer';
 
 import { useRef } from 'react';
 
@@ -32,6 +33,7 @@ const App = () => {
       <Projects />
       <div ref={publicationsRef} />
       <Publications />
+      <Footer />
 
       {/* Sticky Floating Links */}
       <div class='float'>

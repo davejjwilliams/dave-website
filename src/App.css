@@ -108,11 +108,22 @@ body {
   border: 5px solid var(--button-highlight-color);
 }
 
+.project-carousel {
+  /* text-align: center; */
+  width: 70%;
+}
+
 .card {
-  margin: 1em;
-  padding: 1em;
+  padding: 3%;
+  margin-top: 2%;
   background-color: #444444;
   border-radius: 1em;
+  width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-image {
@@ -121,7 +132,25 @@ body {
 }
 
 .project-nav-buttons {
-  text-align: center;
+  color: red;
+}
+
+.footer {
+  margin-top: 2em;
+}
+
+.footer-link {
+  color: var(--title-text);
+}
+
+@media screen and (max-width: 1600px) {
+  .project-carousel {
+    width: 100%;
+  }
+
+  .card {
+    width: 85%;
+  }
 }
 
 @media screen and (max-width: 900px) {
