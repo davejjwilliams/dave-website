@@ -3,6 +3,8 @@ import About from './components/About';
 import Education from './components/Education';
 import Intro from './components/Intro';
 import Projects from './components/Projects';
+import Publications from './components/Publications';
+import Footer from './components/Footer';
 
 import { useRef } from 'react';
 
@@ -12,19 +14,11 @@ const App = () => {
   const aboutRef = useRef();
   const educationRef = useRef();
   const projectsRef = useRef();
+  const publicationsRef = useRef();
 
   // Section Scroll Methods
-  function homeScroll() {
-    homeRef.current.scrollIntoView({ behavior: 'smooth' });
-  }
-  function aboutScroll() {
-    aboutRef.current.scrollIntoView({ behavior: 'smooth' });
-  }
-  function educationScroll() {
-    educationRef.current.scrollIntoView({ behavior: 'smooth' });
-  }
-  function projectsScroll() {
-    projectsRef.current.scrollIntoView({ behavior: 'smooth' });
+  function sectionScroll(inputRef) {
+    inputRef.current.scrollIntoView({ behavior: 'smooth' });
   }
 
   return (
@@ -37,23 +31,50 @@ const App = () => {
       <Education />
       <div ref={projectsRef} />
       <Projects />
+      <div ref={publicationsRef} />
+      <Publications />
+      <Footer />
 
       {/* Sticky Floating Links */}
       <div class='float'>
-        <a href='#home' className='float-links' onClick={homeScroll}>
+        <a
+          href='#home'
+          className='float-links'
+          onClick={() => sectionScroll(homeRef)}
+        >
           /home
         </a>
         <br />
-        <a href='#about' className='float-links' onClick={aboutScroll}>
+        <a
+          href='#about'
+          className='float-links'
+          onClick={() => sectionScroll(aboutRef)}
+        >
           /about
         </a>
         <br />
-        <a href='#education' className='float-links' onClick={educationScroll}>
+        <a
+          href='#education'
+          className='float-links'
+          onClick={() => sectionScroll(educationRef)}
+        >
           /education
         </a>
         <br />
-        <a href='#projects' className='float-links' onClick={projectsScroll}>
+        <a
+          href='#projects'
+          className='float-links'
+          onClick={() => sectionScroll(projectsRef)}
+        >
           /projects
+        </a>
+        <br />
+        <a
+          href='#publications'
+          className='float-links'
+          onClick={() => sectionScroll(publicationsRef)}
+        >
+          /publications
         </a>
       </div>
     </div>

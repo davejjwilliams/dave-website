@@ -1,21 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import 'react-alice-carousel/lib/alice-carousel.css';
+
 :root {
-  --base-text: #ffffff;
-  --highlight-color: #ba3aff;
+  --base-text: #cecece;
+  --title-text: #ffffff;
+  --highlight-color: #4af626;
+  --button-highlight-color: #2d8f19;
+  /* --highlight-color: #ba3aff; */
   --background: #222222;
 }
 
-html, body {
+html,
+body {
   background-color: var(--background);
   padding: 0;
   margin: 0;
 }
 
-h1 {
-  margin: 0;
+.title {
+  font-size: xx-large;
+  font-weight: bold;
+  color: var(--title-text);
 }
 
-.header {
-  padding-top: 40%;
+.subtitle {
+  font-size: x-large;
+  color: var(--title-text);
 }
 
 .highlight {
@@ -24,50 +34,135 @@ h1 {
 
 .main {
   color: var(--base-text);
-  font-family: "Lucida Console", "Courier New", monospace;
+  text-align: justify;
+  font-family: 'Source Code Pro', monospace;
   width: 50%;
+  margin-top: 40vh;
   margin-left: 25%;
 }
 
 .typing {
   width: 15ch;
-  animation: typing 1.2s steps(15), blink .5s step-end infinite alternate;
+  animation: typing 1.5s steps(15), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid;
+  border-right: 3px solid var(--highlight-color);
   font-family: monospace;
   font-size: 3em;
 }
 
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
 }
-    
+
 @keyframes blink {
   50% {
-    border-color: transparent
+    border-color: transparent;
   }
 }
 
 .float {
-	position:fixed;
-	bottom:40px;
-	right:40px;
-	text-align:left;
-	text-shadow: 2px 2px 3px #000;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  text-align: left;
+  text-shadow: 2px 2px 3px #000;
 }
 
 .float-links {
   color: var(--base-text);
   background: var(--background);
-  background: linear-gradient(to right, var(--base-text) 49.5%, var(--background) 50%);
+  background: linear-gradient(
+    to right,
+    var(--base-text) 49.5%,
+    var(--background) 50%
+  );
   background-size: 200% 100%;
-  background-position:right bottom;
-  transition:all 0.5s ease;
+  background-position: right bottom;
+  transition: all 0.5s ease;
 }
 
 .float-links:hover {
-    background-position:left bottom;
+  background-position: left bottom;
+}
+
+.intro-button {
+  background-color: #444444;
+  border: 5px solid #333333;
+  border-radius: 3em;
+  color: white;
+  display: inline-block;
+  font-size: 1em;
+  margin: 0.5em 0;
+  padding: 1em 2em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  width: 5em;
+}
+
+.intro-button:hover {
+  background-color: var(--highlight-color);
+  border: 5px solid var(--button-highlight-color);
+}
+
+.project-carousel {
+  /* text-align: center; */
+  width: 70%;
+}
+
+.card {
+  padding: 3%;
+  margin-top: 2%;
+  background-color: #444444;
+  border-radius: 1em;
+  width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 0.5em;
+}
+
+.project-nav-buttons {
+  color: red;
+}
+
+.footer {
+  margin-top: 2em;
+}
+
+.footer-link {
+  color: var(--title-text);
+}
+
+@media screen and (max-width: 1600px) {
+  .project-carousel {
+    width: 100%;
+  }
+
+  .card {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main {
+    text-align: left;
+    font-family: 'Source Code Pro', monospace;
+    width: 80%;
+    margin-top: 30vh;
+    margin-left: 10%;
+  }
+
+  .float {
+    display: none;
+  }
 }

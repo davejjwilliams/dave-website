@@ -1,7 +1,11 @@
+import ProjectCarousel from './subcomponents/ProjectCarousel';
+
 const Projects = () => {
   return (
     <div>
-      <h1>Projects</h1>
+      <div className='title'>Projects</div>
+      Here are some projects I have worked on.
+      <ProjectCarousel />
     </div>
   );
 };
